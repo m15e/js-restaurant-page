@@ -33,12 +33,6 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Haroon Abdulrazaq**
-
-- Github: [@haroonabdulrazaq](https://github.com/githubhandle)
-- Twitter: [@Hanq_o](https://twitter.com/twitterhandle)
-- Linkedin: [Haroonabdulrazaq](https://www.linkedin.com/in/haroonabdulrazaq)
-
 👤 **Mark Rode**
 
 - Github: [@m15e](https://github.com/m15e)
