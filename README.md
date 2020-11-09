@@ -31,13 +31,7 @@ To get a local copy up and running follow these simple example steps.
 6.  The application should automatically open in a browser window.
 
 
-## Authors
-
-👤 **Haroon Abdulrazaq**
-
-- Github: [@haroonabdulrazaq](https://github.com/githubhandle)
-- Twitter: [@Hanq_o](https://twitter.com/twitterhandle)
-- Linkedin: [Haroonabdulrazaq](https://www.linkedin.com/in/haroonabdulrazaq)
+## Author
 
 👤 **Mark Rode**
 
