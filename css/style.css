@@ -19,9 +19,8 @@
   list-style-type: none;
 }
 
-.nav-tabs ul li button {
-  border: none;
-  background-color: transparent;
+.nav-tabs ul li {
+  text-decoration: none;
 }
 
 .display {
