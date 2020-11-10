@@ -1,0 +1,54 @@
+#content {
+  display: flex;
+}
+
+.nav-tabs {
+  width: 20%;
+  height: 100vh;
+
+  img {
+    margin-top: 5px;
+    height: auto;
+    width: 90%;
+  }
+
+  ul {
+    list-style-type: none;
+
+    li {
+
+      button {
+        border: none;
+        background-color: transparent;
+      }
+    }    
+  }
+}
+
+.display {
+  width: 80%;
+
+  
+  .row {
+    height: 50vh;
+    display: flex;
+
+    .specials {
+      width: 100%;
+      background-color: yellow;
+    }
+
+    .is-half {
+      border: 2px solid #fff;
+    }
+    
+    .snacks,
+    .take-out {
+      width: 50%;
+      background-color: aquamarine;
+    }
+    .take-out {
+      
+    }
+  }  
+}

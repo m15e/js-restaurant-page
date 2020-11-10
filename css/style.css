@@ -1,0 +1,51 @@
+#content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-tabs {
+  width: 20%;
+  height: 100vh;
+}
+
+.nav-tabs img {
+  margin-top: 5px;
+  height: auto;
+  width: 90%;
+}
+
+.nav-tabs ul {
+  list-style-type: none;
+}
+
+.nav-tabs ul li button {
+  border: none;
+  background-color: transparent;
+}
+
+.display {
+  width: 80%;
+}
+
+.display .row {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.display .row .specials {
+  width: 100%;
+  background-color: yellow;
+}
+
+.display .row .is-half {
+  border: 2px solid #fff;
+}
+
+.display .row .snacks,
+.display .row .take-out {
+  width: 50%;
+  background-color: aquamarine;
+}

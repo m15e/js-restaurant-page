@@ -1,1 +1,5 @@
-console.log('test');
+import { initPage } from "./modules/load.js";
+
+initPage();
+
+
