@@ -1,4 +1,4 @@
-import { helpr } from './helpers';
+import helpr from './helpers';
 
 const loadAbout = () => {
   const display = document.querySelector('.display');
@@ -17,4 +17,4 @@ const loadAbout = () => {
   display.appendChild(topRow);
 };
 
-export { loadAbout };
+export default loadAbout;

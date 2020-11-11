@@ -1,4 +1,4 @@
-import { helpr } from './helpers';
+import helpr from './helpers';
 
 const initPage = () => {
   const contentDiv = document.querySelector('#content');
@@ -69,4 +69,4 @@ const initPage = () => {
   contentDiv.appendChild(display);
 };
 
-export { initPage };
+export default initPage;

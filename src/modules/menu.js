@@ -1,4 +1,4 @@
-import { helpr } from './helpers';
+import helpr from './helpers';
 
 const loadMenu = () => {
   const display = document.querySelector('.display');
@@ -35,4 +35,4 @@ const loadMenu = () => {
   helpr.addChildren(display, [topRow, bottomRow]);
 };
 
-export { loadMenu };
+export default loadMenu;

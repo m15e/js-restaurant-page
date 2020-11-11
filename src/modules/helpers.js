@@ -22,4 +22,4 @@ const helpr = (() => {
   return { addChildren, textEl, classyDiv };
 })();
 
-export { helpr };
+export default helpr;
