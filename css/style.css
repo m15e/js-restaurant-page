@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+}
+
+#content {
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+
+.nav-tabs {
+  width: 20%;
+  height: 100vh;
+  text-align: center;
+}
+
+.nav-tabs img {
+  margin-top: 5px;
+  height: auto;
+  width: 90%;
+}
+
+.nav-tabs ul {
+  list-style-type: none;
+  margin: 5.3rem 0 0 0;
+  border-bottom: 1px solid #dadada;
+  padding: 0;
+}
+
+.nav-tabs ul li {
+  text-align: center;
+  border-top: 1px solid #dadada;
+  padding: 20px 10px;
+}
+
+.nav-tabs ul li a {
+  text-decoration: none;
+  color: #000;
+  width: 100%;
+}
+
+.nav-tabs ul li .home::before {
+  background: url("../src/img/waves.svg");
+}
+
+.nav-tabs ul li .menu::before {
+  background: url("../src/img/bowl.svg");
+}
+
+.nav-tabs ul li .about::before {
+  background: url("../src/img/home.svg");
+}
+
+.nav-tabs ul li .contact::before {
+  background: url("../src/img/dumps.svg");
+}
+
+.nav-tabs ul li .nav-link::before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  display: block;
+  position: relative;
+  top: 200%;
+  left: 45%;
+  margin-bottom: 15px;
+}
+
+.menu-display {
+  color: #000;
+}
+
+.menu-display .row h3::after,
+.menu-display .row h4::after {
+  content: url("../src/img/wave-black.svg");
+  width: 15%;
+  height: 60px;
+  position: relative;
+  display: block;
+}
+
+.menu-display .row h3::after {
+  width: 70px;
+  height: 90px;
+}
+
+.menu-display .row p {
+  line-height: 1.66;
+}
+
+.home-display {
+  color: #fff;
+}
+
+.home-display .row h3::after,
+.home-display .row h4::after {
+  content: url("../src/img/wave.svg");
+  width: 20%;
+  height: 60px;
+  position: relative;
+  display: block;
+}
+
+.home-display .row h3::after {
+  width: 10%;
+  height: 90px;
+}
+
+.display {
+  width: 80%;
+}
+
+.display .row {
+  height: 50vh;
+  display: flex;
+}
+
+.display .row .content-box {
+  padding: 1em 2em;
+}
+
+.display .row img {
+  max-width: 20px !important;
+}
+
+.display .row .specials {
+  width: 100%;
+  background: url("../src/img/chicken.jpg") rgba(0, 0, 0, 0.5);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  border: 2px solid #fff;
+  border-top-width: 5px;
+}
+
+.display .row .is-half {
+  border: 2px solid #fff;
+  width: 50%;
+}
+
+.display .row .snacks,
+.display .row .take-out {
+  width: 50%;
+  background-color: aquamarine;
+  background-blend-mode: multiply;
+}
+
+.display .row .snacks {
+  background: url("../src/img/snacks.jpg") rgba(0, 0, 0, 0.5);
+  background-size: cover;
+}
+
+.display .row .take-out {
+  background: url("../src/img/salad.jpg") rgba(0, 0, 0, 0.5);
+  background-size: cover;
+}
