@@ -52,9 +52,7 @@ body {
   background: url("../src/img/dumps.svg");
 }
 
-.nav-tabs ul li .menu::before,
-.nav-tabs ul li .about::before,
-.nav-tabs ul li .reserve::before {
+.nav-tabs ul li .nav-link::before {
   content: '';
   width: 30px;
   height: 30px;
@@ -66,6 +64,46 @@ body {
   margin-bottom: 15px;
 }
 
+.menu-display {
+  color: #000;
+}
+
+.menu-display .row h3::after,
+.menu-display .row h4::after {
+  content: url("../src/img/wave-black.svg");
+  width: 15%;
+  height: 60px;
+  position: relative;
+  display: block;
+}
+
+.menu-display .row h3::after {
+  width: 50%;
+  height: 90px;
+}
+
+.menu-display .row p {
+  line-height: 1.66;
+}
+
+.home-display {
+  color: #fff;
+}
+
+.home-display .row h3::after,
+.home-display .row h4::after {
+  content: url("../src/img/wave.svg");
+  width: 20%;
+  height: 60px;
+  position: relative;
+  display: block;
+}
+
+.home-display .row h3::after {
+  width: 10%;
+  height: 90px;
+}
+
 .display {
   width: 80%;
 }
@@ -75,30 +113,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #fff;
 }
 
-.display .row .is-half,
-.display .row .specials {
+.display .row .content-box {
   padding: 1em 2em;
 }
 
 .display .row img {
   max-width: 20px !important;
-}
-
-.display .row h3::after,
-.display .row h4::after {
-  content: url("../src/img/wave.svg");
-  width: 20%;
-  height: 60px;
-  position: relative;
-  display: block;
-}
-
-.display .row h3::after {
-  width: 10%;
-  height: 90px;
 }
 
 .display .row .specials {
@@ -113,6 +135,7 @@ body {
 
 .display .row .is-half {
   border: 2px solid #fff;
+  width: 50%;
 }
 
 .display .row .snacks,

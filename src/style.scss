@@ -49,9 +49,7 @@ body {
         background: url('../src/img/dumps.svg');
       }
 
-      .menu::before,
-      .about::before,
-      .reserve::before {
+     .nav-link::before {
         content: '';
         width: 30px;
         height: 30px;
@@ -68,6 +66,51 @@ body {
   }
 }
 
+.menu-display {
+  color: #000;
+
+
+  .row {
+    h3::after,
+    h4::after {
+      content: url('../src/img/wave-black.svg');      
+      width: 15%;
+      height: 60px;
+      position: relative;
+      display: block;
+    }
+
+    h3::after {    
+      width: 50%;  
+      height: 90px; 
+    }
+
+    p {
+        line-height: 1.66;
+      }
+    }
+}
+
+.home-display { 
+   color: #fff;
+
+   .row {
+      h3::after,
+      h4::after {
+        content: url('../src/img/wave.svg');      
+        width: 20%;
+        height: 60px;
+        position: relative;
+        display: block;
+      }
+
+      h3::after {
+        width: 10%;
+        height: 90px; 
+      }
+   }
+}
+
 .display {
   width: 80%;
 
@@ -75,30 +118,14 @@ body {
   .row {
     height: 50vh;
     display: flex;
-    color: #fff;
 
-    .is-half, 
-    .specials {
+    .content-box {
       padding: 1em 2em;
       
     }
 
     img {
       max-width: 20px!important;
-    }
-
-    h3::after,
-    h4::after {
-      content: url('../src/img/wave.svg');
-      width: 20%;
-      height: 60px;
-      position: relative;
-      display: block;
-    }
-
-    h3::after {
-      width: 10%;
-      height: 90px; 
     }
     
     .specials {
@@ -113,6 +140,7 @@ body {
 
     .is-half {
       border: 2px solid #fff;
+      width: 50%;
     }
     
     .snacks,
@@ -133,5 +161,5 @@ body {
       background-size: cover;
       
     }
-  }  
+  }   
 }

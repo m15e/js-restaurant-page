@@ -12,25 +12,11 @@ const initPage = () => {
   const addLink = (linkTo) => {
     const li = document.createElement('li')
     const link = document.createElement('a')
-    link.setAttribute('class', linkTo)
+    link.setAttribute('class', `${linkTo} nav-link`)
     link.setAttribute('href', `#${linkTo}`)
     link.innerHTML = `${linkTo}`
     li.appendChild(link)
     return li
-  }
-
-  // const helpr.textEl = (elType, elText) => {
-  //   const res = document.createElement(elType)
-  //   res.innerHTML = elText
-
-  //   return res
-  // }
-
-  const classyDiv = (className) => {
-    const res = document.createElement('div')
-    res.setAttribute('class', className)
-
-    return res
   }
 
   const menuLink = addLink('menu')
@@ -48,10 +34,10 @@ const initPage = () => {
 
   // use JS to add display-content to div#content
 
-  const display = classyDiv('display')
+  const display = helpr.classyDiv('display home-display')
 
-  const topRow = classyDiv('row')
-  const specials = classyDiv('specials')
+  const topRow = helpr.classyDiv('row')
+  const specials = helpr.classyDiv('specials content-box')
   const specialsTitle = helpr.textEl('h3', 'Fried Chilli Chicken')
   const specialsText = helpr.textEl('p', 'More Chicken Flavour.')
 
@@ -60,16 +46,16 @@ const initPage = () => {
   topRow.appendChild(specials)
 
 
-  const bottomRow = classyDiv('row')
+  const bottomRow = helpr.classyDiv('row')
 
-  const snacks = classyDiv('is-half snacks')
+  const snacks = helpr.classyDiv('is-half snacks content-box')
   const snacksTitle = helpr.textEl('h4', 'Snacks')
   const snacksText = helpr.textEl('p', 'Snacks sooo goood.')
 
   helpr.addChildren(snacks, [snacksTitle, snacksText])
 
 
-  const takeOut = classyDiv('is-half take-out')
+  const takeOut = helpr.classyDiv('is-half take-out content-box')
   const takeOutTitle = helpr.textEl('h4', 'Take-out')
   const takeOutText = helpr.textEl('p', 'Try our take-out.')
 

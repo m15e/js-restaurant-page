@@ -12,7 +12,14 @@ const helpr = (() => {
     return res
   }
 
-  return { addChildren, textEl }
+  const classyDiv = (className) => {
+    const res = document.createElement('div')
+    res.setAttribute('class', className)
+
+    return res
+  }
+
+  return { addChildren, textEl, classyDiv }
 })();
 
 export { helpr }
