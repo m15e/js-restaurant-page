@@ -1,25 +1,25 @@
 const helpr = (() => {
   const addChildren = (parent, items) => {
     items.forEach(el => {
-      parent.appendChild(el)
-    })
-  }
+      parent.appendChild(el);
+    });
+  };
 
   const textEl = (elType, elText) => {
-    const res = document.createElement(elType)
-    res.innerHTML = elText
+    const res = document.createElement(elType);
+    res.innerHTML = elText;
 
-    return res
-  }
+    return res;
+  };
 
   const classyDiv = (className) => {
-    const res = document.createElement('div')
-    res.setAttribute('class', className)
+    const res = document.createElement('div');
+    res.setAttribute('class', className);
 
-    return res
-  }
+    return res;
+  };
 
-  return { addChildren, textEl, classyDiv }
+  return { addChildren, textEl, classyDiv };
 })();
 
-export { helpr }
+export default { helpr };
