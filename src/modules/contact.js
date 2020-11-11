@@ -1,4 +1,4 @@
-import helpr from './helpers';
+import { helpr } from './helpers';
 
 const loadContact = () => {
   const display = document.querySelector('.display');
@@ -29,4 +29,4 @@ const loadContact = () => {
   helpr.addChildren(display, [topRow, bottomRow]);
 };
 
-export default { loadContact };
+export { loadContact };

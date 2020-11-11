@@ -1,19 +1,16 @@
 # JS Book Library
 
-> A simple library app built to practice Javascript
+> A simple restaurant page built to practice JavaScript
 
 ![screenshot](./screenshot.png)
 
-- Users can click a button to show/hide the form to add a new book
-- The application displays all the books that have been added to the library
-- Users can delete books
+- The website dynamically loads each element using only JavaScript
 
 ## Built With
 
 - HTML
 - Javascript
 - Sass
-- [Bulma.io](https://bulma.io)
 
 
 ## Getting Started
@@ -23,8 +20,8 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 
 1.  Clone this repository with
-    `git clone https://github.com/m15e/library-javascript.git` using your terminal or command line.
-2.  Change to the project directory by entering `cd library-javascript` in the terminal
+    `git clone https://github.com/m15e/js-restaurant-page.git` using your terminal or command line.
+2.  Change to the project directory by entering `cd js-restaurant-page` in the terminal
 3.  Next open the folder with an IDE like VSCode.
 4.  Install the LiveServer Extension on VSCode.
 5.  Once installed hit the "Go Live" button on the bottom right hand of your editor.
@@ -51,6 +48,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Microverse
+- [Momofuku](https://momofuku.com/) 
 - The Odin Project
 
 ## 📝 License

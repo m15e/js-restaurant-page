@@ -1,7 +1,7 @@
-import initPage from './modules/load';
-import loadMenu from './modules/menu';
-import loadAbout from './modules/about';
-import loadContact from './modules/contact';
+import { initPage } from './modules/load';
+import { loadMenu } from './modules/menu';
+import { loadAbout } from './modules/about';
+import { loadContact } from './modules/contact';
 
 initPage();
 
