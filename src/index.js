@@ -5,9 +5,17 @@ import { loadReserve } from "./modules/reserve.js";
 
 initPage();
 
+
+const contentDiv = document.querySelector('#content')
 const menuBtn = document.querySelector('.menu')
 const aboutBtn = document.querySelector('.about')
 const reserveBtn = document.querySelector('.reserve')
+const homeImg = document.querySelector('.nav-tabs img')
+
+homeImg.onclick = () => {
+  contentDiv.innerHTML = ''
+  initPage()
+}
 
 
 menuBtn.addEventListener('click', (e) => {
