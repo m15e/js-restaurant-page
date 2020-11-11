@@ -3,10 +3,8 @@ body {
 }
 
 #content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
 }
 
 .nav-tabs {
@@ -114,8 +112,6 @@ body {
 
 .display .row {
   height: 50vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 

@@ -4,7 +4,7 @@ body {
 
 #content {
   display: flex;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
 }
 
 .nav-tabs {
@@ -24,27 +24,26 @@ body {
     border-bottom: 1px solid #dadada;
     padding: 0;
 
-    li {            
-  
+    li {
       text-align: center;
-      border-top: 1px solid #dadada;      
+      border-top: 1px solid #dadada;
       padding: 20px 10px;
 
-      a {        
+      a {
         text-decoration: none;
-        color: #000;   
-        width: 100%;       
+        color: #000;
+        width: 100%;
       }
 
       .home::before {
-        background: url('../src/img/waves.svg');        
-      }
-      
-      .menu::before {
-        background: url('../src/img/bowl.svg');         
+        background: url('../src/img/waves.svg');
       }
 
-      .about::before {        
+      .menu::before {
+        background: url('../src/img/bowl.svg');
+      }
+
+      .about::before {
         background: url('../src/img/home.svg');
       }
 
@@ -52,11 +51,10 @@ body {
         background: url('../src/img/dumps.svg');
       }
 
-     .nav-link::before {
+      .nav-link::before {
         content: '';
         width: 30px;
         height: 30px;
-        
         background-size: contain;
         display: block;
         position: relative;
@@ -64,73 +62,69 @@ body {
         left: 45%;
         margin-bottom: 15px;
       }
-      
-    }    
+    }
   }
 }
 
 .menu-display {
   color: #000;
 
-
   .row {
     h3::after,
     h4::after {
-      content: url('../src/img/wave-black.svg');      
+      content: url('../src/img/wave-black.svg');
       width: 15%;
       height: 60px;
       position: relative;
       display: block;
     }
 
-    h3::after {    
-      width: 70px;  
-      height: 90px; 
+    h3::after {
+      width: 70px;
+      height: 90px;
     }
 
     p {
-        line-height: 1.66;
-      }
+      line-height: 1.66;
     }
+  }
 }
 
-.home-display { 
-   color: #fff;
+.home-display {
+  color: #fff;
 
-   .row {
-      h3::after,
-      h4::after {
-        content: url('../src/img/wave.svg');      
-        width: 20%;
-        height: 60px;
-        position: relative;
-        display: block;
-      }
+  .row {
+    h3::after,
+    h4::after {
+      content: url('../src/img/wave.svg');
+      width: 20%;
+      height: 60px;
+      position: relative;
+      display: block;
+    }
 
-      h3::after {
-        width: 10%;
-        height: 90px; 
-      }
-   }
+    h3::after {
+      width: 10%;
+      height: 90px;
+    }
+  }
 }
 
 .display {
   width: 80%;
 
-  
   .row {
     height: 50vh;
     display: flex;
 
     .content-box {
       padding: 1em 2em;
-      
     }
 
     img {
-      max-width: 20px!important;
+      max-width: 20px !important;
     }
-    
+
     .specials {
       width: 100%;
       background: url('../src/img/chicken.jpg') rgba($color: #000, $alpha: 0.5);
@@ -145,7 +139,7 @@ body {
       border: 2px solid #fff;
       width: 50%;
     }
-    
+
     .snacks,
     .take-out {
       width: 50%;
@@ -156,13 +150,11 @@ body {
     .snacks {
       background: url('../src/img/snacks.jpg') rgba($color: #000, $alpha: 0.5);
       background-size: cover;
-      
     }
 
     .take-out {
       background: url('../src/img/salad.jpg') rgba($color: #000, $alpha: 0.5);
       background-size: cover;
-      
     }
-  }   
+  }
 }
