@@ -17,8 +17,14 @@ const loadContact = () => {
 
   const bottomRow = helpr.classyDiv('row')
 
+  const address = helpr.classyDiv('is-half address content-box')
+  const addressTitle = helpr.textEl('h4', 'Address')
+  const addressText = helpr.textEl('p',
+    '12 Acacia Street<br>San Domingo Valley<br>12011 Playa City<br>Palau')
 
+  helpr.addChildren(address, [addressTitle, addressText])
 
+  helpr.addChildren(bottomRow, [address])
 
   helpr.addChildren(display, [topRow, bottomRow])
 }
