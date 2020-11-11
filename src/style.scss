@@ -15,14 +15,44 @@
 
   ul {
     list-style-type: none;
+    margin: 0;
 
     li {      
-      margin: 2em auto;
+      margin: 3rem 3.5rem;
+      
+
       a {
         text-decoration: none;
-        color: #000;  
+        color: #000;          
+      }
+      
+      .menu::before {
+        background: url('../src/img/bowl.svg');        
         
       }
+
+      .about::before {        
+        background: url('../src/img/waves.svg');
+      }
+
+      .reserve::before {
+        background: url('../src/img/dumps.svg');
+      }
+
+      .menu::before,
+      .about::before,
+      .reserve::before {
+        content: '';
+        width: 30px;
+        height: 30px;
+        
+        background-size: contain;
+        display: block;
+        position: relative;
+        left: -60px;
+        top: 20px;
+      }
+      
     }    
   }
 }
@@ -50,13 +80,14 @@
     h4::after {
       content: url('../src/img/wave.svg');
       width: 20%;
-      height: 90px;
+      height: 60px;
       position: relative;
       display: block;
     }
 
     h3::after {
-      width: 10%; 
+      width: 10%;
+      height: 90px; 
     }
     
     .specials {
