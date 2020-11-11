@@ -1,5 +1,6 @@
 #content {
   display: flex;
+  font-family: Arial;
 }
 
 .nav-tabs {
@@ -15,8 +16,13 @@
   ul {
     list-style-type: none;
 
-    li {
-      text-decoration: none;
+    li {      
+      margin: 2em auto;
+      a {
+        text-decoration: none;
+        color: #000;  
+        
+      }
     }    
   }
 }
@@ -28,10 +34,39 @@
   .row {
     height: 50vh;
     display: flex;
+    color: #fff;
 
+    .is-half, 
+    .specials {
+      padding: 1em 2em;
+      
+    }
+
+    img {
+      max-width: 20px!important;
+    }
+
+    h3::after,
+    h4::after {
+      content: url('../src/img/wave.svg');
+      width: 20%;
+      height: 90px;
+      position: relative;
+      display: block;
+    }
+
+    h3::after {
+      width: 10%; 
+    }
+    
     .specials {
       width: 100%;
-      background-color: yellow;
+      background: url('../src/img/chicken.jpg') rgba($color: #000, $alpha: 0.5);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-blend-mode: multiply;
+      border: 2px solid #fff;
+      border-top-width: 5px;
     }
 
     .is-half {
@@ -42,8 +77,18 @@
     .take-out {
       width: 50%;
       background-color: aquamarine;
+      background-blend-mode: multiply;
     }
+
+    .snacks {
+      background: url('../src/img/snacks.jpg') rgba($color: #000, $alpha: 0.5);
+      background-size: cover;
+      
+    }
+
     .take-out {
+      background: url('../src/img/salad.jpg') rgba($color: #000, $alpha: 0.5);
+      background-size: cover;
       
     }
   }  

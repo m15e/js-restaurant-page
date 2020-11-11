@@ -57,7 +57,7 @@ const initPage = () => {
   const topRow = classyDiv('row')
   const specials = classyDiv('specials')
   const specialsTitle = textEl('h3', 'Fried Chilli Chicken')
-  const specialsText = textEl('p', 'More Chicken Flavour')
+  const specialsText = textEl('p', 'More Chicken Flavour.')
 
   addChildren(specials, [specialsTitle, specialsText])
 

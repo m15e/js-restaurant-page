@@ -2,6 +2,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: Arial;
 }
 
 .nav-tabs {
@@ -20,7 +21,12 @@
 }
 
 .nav-tabs ul li {
+  margin: 2em auto;
+}
+
+.nav-tabs ul li a {
   text-decoration: none;
+  color: #000;
 }
 
 .display {
@@ -32,11 +38,39 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: #fff;
+}
+
+.display .row .is-half,
+.display .row .specials {
+  padding: 1em 2em;
+}
+
+.display .row img {
+  max-width: 20px !important;
+}
+
+.display .row h3::after,
+.display .row h4::after {
+  content: url("../src/img/wave.svg");
+  width: 20%;
+  height: 90px;
+  position: relative;
+  display: block;
+}
+
+.display .row h3::after {
+  width: 10%;
 }
 
 .display .row .specials {
   width: 100%;
-  background-color: yellow;
+  background: url("../src/img/chicken.jpg") rgba(0, 0, 0, 0.5);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  border: 2px solid #fff;
+  border-top-width: 5px;
 }
 
 .display .row .is-half {
@@ -47,4 +81,15 @@
 .display .row .take-out {
   width: 50%;
   background-color: aquamarine;
+  background-blend-mode: multiply;
+}
+
+.display .row .snacks {
+  background: url("../src/img/snacks.jpg") rgba(0, 0, 0, 0.5);
+  background-size: cover;
+}
+
+.display .row .take-out {
+  background: url("../src/img/salad.jpg") rgba(0, 0, 0, 0.5);
+  background-size: cover;
 }
