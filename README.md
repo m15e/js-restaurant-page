@@ -1,4 +1,4 @@
-# JS Book Library
+# JS Restaurant Page
 
 > A simple restaurant page built to practice JavaScript
 
