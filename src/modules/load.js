@@ -19,11 +19,12 @@ const initPage = () => {
     return li
   }
 
+  const homeLink = addLink('home')
   const menuLink = addLink('menu')
   const aboutLink = addLink('about')
-  const reserveLink = addLink('reserve')
+  const reserveLink = addLink('contact')
 
-  helpr.addChildren(navList, [menuLink, aboutLink, reserveLink])
+  helpr.addChildren(navList, [homeLink, menuLink, aboutLink, reserveLink])
 
   const logoImg = document.createElement('img')
   logoImg.setAttribute('src', '../src/img/logo.png')

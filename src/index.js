@@ -1,21 +1,27 @@
 import { initPage } from "./modules/load.js";
 import { loadMenu } from "./modules/menu.js";
 import { loadAbout } from "./modules/about.js";
-import { loadReserve } from "./modules/reserve.js";
+import { loadContact } from "./modules/contact.js";
 
 initPage();
 
 
 const contentDiv = document.querySelector('#content')
+const homeBtn = document.querySelector('.home')
 const menuBtn = document.querySelector('.menu')
 const aboutBtn = document.querySelector('.about')
-const reserveBtn = document.querySelector('.reserve')
+const contactBtn = document.querySelector('.contact')
 const homeImg = document.querySelector('.nav-tabs img')
 
 homeImg.onclick = () => {
   contentDiv.innerHTML = ''
-  initPage()
+  location.reload()
 }
+
+homeBtn.addEventListener('click', (e) => {
+  e.preventDefault()
+  location.reload()
+})
 
 
 menuBtn.addEventListener('click', (e) => {
@@ -28,7 +34,7 @@ aboutBtn.addEventListener('click', (e) => {
   loadAbout()
 });
 
-reserveBtn.addEventListener('click', (e) => {
+contactBtn.addEventListener('click', (e) => {
   e.preventDefault()
-  loadReserve()
+  loadContact()
 });

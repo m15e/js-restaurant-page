@@ -40,15 +40,19 @@ body {
   width: 100%;
 }
 
+.nav-tabs ul li .home::before {
+  background: url("../src/img/waves.svg");
+}
+
 .nav-tabs ul li .menu::before {
   background: url("../src/img/bowl.svg");
 }
 
 .nav-tabs ul li .about::before {
-  background: url("../src/img/waves.svg");
+  background: url("../src/img/home.svg");
 }
 
-.nav-tabs ul li .reserve::before {
+.nav-tabs ul li .contact::before {
   background: url("../src/img/dumps.svg");
 }
 
@@ -78,7 +82,7 @@ body {
 }
 
 .menu-display .row h3::after {
-  width: 50%;
+  width: 70px;
   height: 90px;
 }
 
